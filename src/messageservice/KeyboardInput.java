@@ -14,11 +14,23 @@ import java.util.Scanner;
 public class KeyboardInput implements MessageInput {
 
     Scanner keyboard = new Scanner(System.in);
+    private String message;
     
     @Override
     public String obtainMessage() {
         System.out.println("Please enter a message from the keyboard: ");
-        return keyboard.nextLine();
-        
+        setMessage(keyboard.nextLine());
+        return message;       
     }
+
+    @Override
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+    
+    
 }

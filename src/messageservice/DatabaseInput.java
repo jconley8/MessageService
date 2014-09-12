@@ -14,12 +14,24 @@ import java.util.Random;
 public class DatabaseInput implements MessageInput {
 
     FakeMessageDatabase db = new FakeMessageDatabase();
-            
+    private String message;
+    
     @Override
     public String obtainMessage() {
         Random rand = new Random();
         int num = rand.nextInt(6);
-        return db.getRandomMessage(num);
+        message = db.getRandomMessage(num);
+        return message;
+    }
+
+    @Override
+    public void setMessage(String message) {
+        this.message = message;
+    }
+    
+    @Override
+    public String getMessage() {
+        return message;
     }
     
 }

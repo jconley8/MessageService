@@ -19,7 +19,8 @@ public class MessageService {
         this.output = output;
     }
 
-    
-    
-    
+    public void processMessage() {
+        input.obtainMessage();
+        output.sendMessage(input.getMessage());
+    }
 }

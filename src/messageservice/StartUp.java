@@ -10,9 +10,14 @@ package messageservice;
  * @author Josh
  */
 public class StartUp {
+    
     public static void main(String[] args) {
+        MessageInput input = new DatabaseInput();
+        MessageOutput output = new GuiOutput();
         
-        MessageService msg = new MessageService();
-        msg.setInput(KeyboardInput);
+        MessageService msg = new MessageService(input, output);
+        
+       msg.processMessage();
+        
     }
 }
