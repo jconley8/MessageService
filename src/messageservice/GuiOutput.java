@@ -4,13 +4,17 @@
  * and open the template in the editor.
  */
 package messageservice;
-
+import javax.swing.JOptionPane;
 /**
  *
  * @author Josh
  */
-public interface MessageOutput {
+public class GuiOutput implements MessageOutput {
+
+    @Override
+    public void sendMessage(String message) {
+        JOptionPane.showMessageDialog(null, message);
+    }
     
-    public abstract void sendMessage(String message);
     
 }

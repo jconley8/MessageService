@@ -9,8 +9,10 @@ package messageservice;
  *
  * @author Josh
  */
-public interface MessageOutput {
-    
-    public abstract void sendMessage(String message);
-    
+public class StartUp {
+    public static void main(String[] args) {
+        
+        MessageService msg = new MessageService();
+        msg.setInput(KeyboardInput);
+    }
 }

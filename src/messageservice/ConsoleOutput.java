@@ -9,8 +9,11 @@ package messageservice;
  *
  * @author Josh
  */
-public interface MessageOutput {
-    
-    public abstract void sendMessage(String message);
+public class ConsoleOutput implements MessageOutput {
+
+    @Override
+    public void sendMessage(String message) {
+        System.out.println(message);
+    }
     
 }

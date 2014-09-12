@@ -10,12 +10,16 @@ package messageservice;
  * @author Josh
  */
 public class MessageService {
+    
+    private MessageInput input;
+    private MessageOutput output;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public MessageService(MessageInput input, MessageOutput output) {
+        this.input = input;
+        this.output = output;
     }
+
+    
+    
     
 }
