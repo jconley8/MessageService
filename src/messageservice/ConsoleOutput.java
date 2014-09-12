@@ -14,6 +14,7 @@ public class ConsoleOutput implements MessageOutput {
     
     @Override
     public void sendMessage(String message) {
+        System.out.println("Outputting message to console...");
         System.out.println(message);
     }
 

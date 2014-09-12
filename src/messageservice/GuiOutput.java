@@ -15,6 +15,7 @@ public class GuiOutput implements MessageOutput {
 
     @Override
     public void sendMessage(String message) {
+        System.out.println("Outputting message to a GUI...");
         JOptionPane.showMessageDialog(null, message);
     }
 

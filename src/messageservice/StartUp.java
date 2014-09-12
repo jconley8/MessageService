@@ -13,7 +13,7 @@ public class StartUp {
 
     public static void main(String[] args) {
         
-        MessageService msg = new MessageService(new DatabaseInput(), new GuiOutput());
+        MessageService msg = new MessageService(new KeyboardInput(), new GuiOutput());
         msg.processMessage();
         
     }
