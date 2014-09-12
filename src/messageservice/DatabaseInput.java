@@ -15,7 +15,7 @@ public class DatabaseInput implements MessageInput {
 
     FakeMessageDatabase db = new FakeMessageDatabase();
     private String message;
-    
+
     @Override
     public String obtainMessage() {
         Random rand = new Random();
@@ -28,10 +28,10 @@ public class DatabaseInput implements MessageInput {
     public void setMessage(String message) {
         this.message = message;
     }
-    
+
     @Override
     public String getMessage() {
         return message;
     }
-    
+
 }

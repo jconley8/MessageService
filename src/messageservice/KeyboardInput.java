@@ -15,12 +15,12 @@ public class KeyboardInput implements MessageInput {
 
     Scanner keyboard = new Scanner(System.in);
     private String message;
-    
+
     @Override
     public String obtainMessage() {
         System.out.println("Please enter a message from the keyboard: ");
         setMessage(keyboard.nextLine());
-        return message;       
+        return message;
     }
 
     @Override
@@ -31,6 +31,5 @@ public class KeyboardInput implements MessageInput {
     public void setMessage(String message) {
         this.message = message;
     }
-    
-    
+
 }

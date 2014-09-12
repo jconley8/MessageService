@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package messageservice;
+
 import javax.swing.JOptionPane;
+
 /**
  *
  * @author Josh
@@ -15,6 +17,5 @@ public class GuiOutput implements MessageOutput {
     public void sendMessage(String message) {
         JOptionPane.showMessageDialog(null, message);
     }
-    
-    
+
 }

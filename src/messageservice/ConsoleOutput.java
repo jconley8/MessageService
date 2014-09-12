@@ -15,5 +15,5 @@ public class ConsoleOutput implements MessageOutput {
     public void sendMessage(String message) {
         System.out.println(message);
     }
-    
+
 }

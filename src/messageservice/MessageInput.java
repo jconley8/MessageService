@@ -10,8 +10,10 @@ package messageservice;
  * @author Josh
  */
 public interface MessageInput {
-    
+
     public abstract String obtainMessage();
-    public abstract String getMessage();
+    
     public abstract void setMessage(String message);
+
+    public abstract String getMessage();
 }

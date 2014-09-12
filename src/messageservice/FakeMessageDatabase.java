@@ -10,17 +10,17 @@ package messageservice;
  * @author Josh
  */
 public class FakeMessageDatabase {
+
     private String messages[] = {"Welcome!",
-                                "Hello World",
-                                "Java Rocks!",
-                                "Hello Java Class",
-                                "Have a good day!",
-                                "Good Morning!",
-                                "Knock knock..."};
+        "Hello World",
+        "Java Rocks!",
+        "Hello Java Class",
+        "Have a good day!",
+        "Good Morning!",
+        "Knock knock..."};
 
     public String getRandomMessage(int randomNumber) {
         return messages[randomNumber];
     }
-    
-    
+
 }

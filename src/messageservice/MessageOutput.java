@@ -10,7 +10,7 @@ package messageservice;
  * @author Josh
  */
 public interface MessageOutput {
-    
+
     public abstract void sendMessage(String message);
-    
+
 }
