@@ -7,14 +7,14 @@ package messageservice;
 
 /**
  *
- * @author Josh
+ * @author Josh Conley
  */
 public class StartUp {
 
     public static void main(String[] args) {
-
+        
         MessageService msg = new MessageService(new DatabaseInput(), new GuiOutput());
         msg.processMessage();
-
+        
     }
 }

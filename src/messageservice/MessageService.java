@@ -7,7 +7,7 @@ package messageservice;
 
 /**
  *
- * @author Josh
+ * @author Josh Conley
  */
 public class MessageService {
     

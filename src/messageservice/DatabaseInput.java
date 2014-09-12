@@ -9,12 +9,13 @@ import java.util.Random;
 
 /**
  *
- * @author Josh
+ * @author Josh Conley
  */
 public class DatabaseInput implements MessageInput {
 
     FakeMessageDatabase db = new FakeMessageDatabase();
     private String message;
+
 
     @Override
     public String obtainMessage() {
@@ -24,6 +25,7 @@ public class DatabaseInput implements MessageInput {
         return message;
     }
 
+  
     @Override
     public void setMessage(String message) {
         this.message = message;

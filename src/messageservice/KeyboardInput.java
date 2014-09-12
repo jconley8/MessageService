@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Josh
+ * @author Josh Conley
  */
 public class KeyboardInput implements MessageInput {
 
@@ -23,11 +23,13 @@ public class KeyboardInput implements MessageInput {
         return message;
     }
 
+
     @Override
     public String getMessage() {
         return message;
     }
 
+    @Override
     public void setMessage(String message) {
         this.message = message;
     }

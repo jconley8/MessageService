@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Josh
+ * @author Josh Conley
  */
 public class GuiOutput implements MessageOutput {
 

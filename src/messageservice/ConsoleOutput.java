@@ -7,10 +7,11 @@ package messageservice;
 
 /**
  *
- * @author Josh
+ * @author Josh Conley
  */
 public class ConsoleOutput implements MessageOutput {
 
+    
     @Override
     public void sendMessage(String message) {
         System.out.println(message);
